@@ -6,12 +6,12 @@ canvasEL.width = 400;
 
 // Game Parameters
 let speed = 7;
-let tileCount = 20;
-let snakeHeadX = 10;
+let tileCount = 20; // size game field
+let snakeHeadX = 10; // postion snake head
 let snakeHeadY = 10;
-let xV = 0;
+let xV = 0; // start velocity
 let yV = 0;
-let snackY = 5;
+let snackY = 5; // position snack
 let snackX = 5;
 let snakeTailLength = 2;
 let score = 0;
@@ -36,13 +36,11 @@ function playGame() {
   if (result) {
     return;
   }
-
   clearScreen();
   snackColiDete();
   drawSnack();
   drawSnake();
   drawScore();
-
   setTimeout(playGame, 1000 / speed);
 }
 //
