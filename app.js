@@ -3,7 +3,7 @@ const conX = canvasEL.getContext("2d");
 
 canvasEL.height = 400;
 canvasEL.width = 400;
-
+// error 500
 // Game Parameters
 let speed = 7;
 let tileCount = 20; // size game field
